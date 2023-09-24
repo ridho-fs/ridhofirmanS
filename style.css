@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(185, 165, 139);
+    
+}
+
+
+.head {
+    max-width: 475px;
+    border: 5px solid #090909;
+    margin: auto;
+    display: flex;
+    height: 120px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top:20px ;
+    margin-bottom: 20px;
+    font-family: "Orbitron", sans-serif;
+    color: rgb(247, 248, 252);
+}
+
+#restartButton {
+    background-color: rgb(18, 232, 68);
+    border: solid 4px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    padding: 18px 7px;
+    background-image: url(sharingan.png);
+    background-position: center;
+    background-size: cover;
+    color: rgb(254, 248, 248);
+    font-weight: bold;
+    border-color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    left: 46%;
+
+}
+
+#restartButton:active {
+    background-image:url(mata\ sasuke.jpg);
+    transition-duration: 100000;
+}
+
+.score {
+    margin-top: 5px;
+}
+
+.container {
+    max-width: 655px;
+    display: grid;
+    grid-template-columns: repeat(6,auto);
+    gap: 2rem;
+    margin: auto;
+    padding: 10px;
+}
+
+.cell div {
+    height: 100px;
+    border-radius: 12px;
+}
+
+.cell {
+    position: relative;
+    cursor: pointer;
+}
+
+.front {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #121212;
+    background-color: #fffcfc;
+    transform: rotateY(90deg);
+   
+}
+
+.back {
+   background-image: url(awan\ akatsuki.jpg);
+   background-position: center;
+   background-size: cover;
+}
+
+img {
+    height: 88px;
+    width: 77px;
+}
+
+.flip {
+    transform: rotateY(0deg);
+}
+
+.match {
+    transform: rotateY(0deg);
+}
+
+#tombol {
+    position: absolute;
+    top: 19%;
+    display: flex;
+
+}
+
+#you-won {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Orbitron', sans-serif;
+    z-index: 9999; 
+}
+
+#you-won p {
+    margin: 0; 
+}
+
+#you-won button {
+    background-color: #df0ff2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+#you-won button:hover {
+    background-color: #fffcfc;
+    color: #df0ff2;
+}
